@@ -394,11 +394,11 @@ services:
       # a ligação muda com tudo "conectado" nos logs.
       - "10000-10200:10000-10200/udp"
     volumes:
-      - ./asterisk/pjsip.conf:/etc/asterisk/pjsip.conf:ro
-      - ./asterisk/extensions.conf:/etc/asterisk/extensions.conf:ro
-      - ./asterisk/ari.conf:/etc/asterisk/ari.conf:ro
-      - ./asterisk/http.conf:/etc/asterisk/http.conf:ro
-      - ./asterisk/rtp.conf:/etc/asterisk/rtp.conf:ro
+      - './asterisk/pjsip.conf:/etc/asterisk/pjsip.conf:ro'
+      - './asterisk/extensions.conf:/etc/asterisk/extensions.conf:ro'
+      - './asterisk/ari.conf:/etc/asterisk/ari.conf:ro'
+      - './asterisk/http.conf:/etc/asterisk/http.conf:ro'
+      - './asterisk/rtp.conf:/etc/asterisk/rtp.conf:ro'
       - asterisk-data:/var/lib/asterisk
       - asterisk-logs:/var/log/asterisk
     healthcheck:
